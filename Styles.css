@@ -7,25 +7,26 @@ td{
     border: 2px solid black;
     padding: 0px;
     margin: 0px;
-    overflow: auto;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 div{
-    resize: both;
+    resize: horizontal;
     overflow: auto;
-    width: 120px;
+    max-width: 500px;
     height: 120px;
     margin: 0px;
     padding: 0px;
     border: 1px solid black;
     display: block;
+    overflow: hidden;
 }
 
 td div{
     border:0;
     width: auto;
     height: auto;
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 30px;
+    min-width: 100%;
 }
-
