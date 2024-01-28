@@ -7,51 +7,54 @@
     <link rel="stylesheet" type="text/css" href="Styles.css">
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th><div>Header one</div></th>          
-                <th><div>Header two</div></th>            
-                <th><div>Header three</div></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div>Lorem ipsum dolor </div>
-                </td>
-                <td>
-                    <div>two</div>
-                </td>
-                <td>
-                    <div>tree</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>four</div>
-                </td>
-                <td>
-                    <div>five</div>
-                </td>
-                <td>
-                    <div>six</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>seven</div>
-                </td>
-                <td>
-                    <div>eight</div>
-                </td>
-                <td>
-                    <div>nine</div>
-                </td>
-            </tr>
-        </tbody>
-       
-    </table>
+    <div class="custom-resizable-container">
+        <table class="custom-resizable">
+            <thead class="custom-resizable">
+                <tr class="custom-resizable">
+                    <th class="custom-resizable"><div class="table-row-container custom-resizable head-div-container">Header one</div></th>          
+                    <th class="custom-resizable"><div class="table-row-container custom-resizable head-div-container">Header two</div></th>            
+                    <th class="custom-resizable"><div class="table-row-container custom-resizable head-div-container">Header three</div></th>
+                </tr>
+            </thead>
+            <tbody class="custom-resizable">
+                <tr class="custom-resizable">
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">Lorem ipsum dolor </div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">two</div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">tree</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">four</div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">five</div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">six</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">seven</div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">eight</div>
+                    </td>
+                    <td class="custom-resizable">
+                        <div class="table-row-container custom-resizable">nine</div>
+                    </td>
+                </tr>
+            </tbody>
+           
+        </table>
+    </div>
+    
 
  <script src="App.js"></script>   
 </body>
