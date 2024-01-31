@@ -33,7 +33,7 @@ thead .table-row-container.custom-resizable {
   padding: 0px;
   border: 1px solid black;
   height: 40px;
-  min-width: 150px;
+  min-width: 50px;
 }
 
 td.custom-resizable,
@@ -75,7 +75,7 @@ th.custom-resizable {
 }
 
 ::-webkit-resizer{
-    background:transparent;
+    background:#00A5E3;
 }
 
 ::-webkit-scrollbar {
