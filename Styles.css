@@ -1,41 +1,105 @@
-.custom-resizable-container{
-    max-width: 500px;
-    max-height: 500px;
-    overflow: auto;
+.custom-resizable-container {
+  max-width: 500px;
+  max-height: 500px;
+  overflow: auto;
 }
 
 table.custom-resizable {
-    border-collapse: collapse;
-    border-spacing: 0px;
+  border-collapse: collapse;
+  border-spacing: 0px;
 }
 
 thead.custom-resizable {
-    display: table-header-group;
+  display: table-header-group;
 }
 
-td.custom-resizable, th.custom-resizable{
-    border: 2px solid black;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    white-space: nowrap;
+td.custom-resizable,
+th.custom-resizable {
+  border: 2px solid black;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.table-row-container.custom-resizable{
-    resize: horizontal;    
-    max-width: 500px;
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid black;
-    display: block;
-    overflow: hidden;
+thead .table-row-container.custom-resizable {
+  resize: horizontal;
+  overflow: hidden;
 }
 
-td.custom-resizable , th.custom-resizable{
-    border:0;
-    width: auto;
-    /* Seteaza in functie de cate col ai */
-    height: 20%;
-    min-height: 30px;
-    min-width: 100%;
+.table-row-container.custom-resizable {
+  max-width: 500px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  height: 40px;
+  min-width: 150px;
 }
+
+td.custom-resizable,
+th.custom-resizable {
+  border: 0;
+  width: auto;
+  /* Seteaza in functie de cate col ai */
+
+  min-width: 100%;
+}
+
+
+
+
+
+/* scrool
+-------------------------------------------------- */
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none !important;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #ebebeb;
+    border-radius: 5px 5px;
+    margin: 100px 0px;
+}
+
+/*The trackbar makes margin only ::-webkit-scrollbar-button is active*/
+::-webkit-scrollbar-button {
+    background: transparent;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment {
+    display: none !important;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-resizer{
+    background:transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    position: relative;
+    border-radius: 5px;
+    background: #c20000;
+}
+
+::-webkit-resizer {
+    color: red;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00A5E3;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00A5E3;
+}
+
